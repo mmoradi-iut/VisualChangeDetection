@@ -6,4 +6,4 @@ In this repository, you can find information, results, data, and source codes of
 <h2>The context-aware visual change detection method</h2>
 <p>The following image illustrates the overal architecture of our visual change detection method:</p>
 <br>
-<img width="1000" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Figure-1.jpg">
+<img width="1000" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Figure-1.tif">
