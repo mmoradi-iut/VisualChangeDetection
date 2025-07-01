@@ -6,7 +6,7 @@ In this repository, you can find information, results, data, and source codes of
 <h2>The context-aware visual change detection method</h2>
 <p>The following image illustrates the overal architecture of our visual change detection method:</p>
 <br>
-<img width="800" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Figure-1.jpg">
+<img width="600" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Figure-1.jpg">
 
 Our visual change detection model consists of four main steps:
 1) control detection
@@ -20,4 +20,4 @@ The proposed visual change detection method operates through a four-stage pipeli
 <p>For detecting UI controls from software screenshots, we utilize an object detection machine learning model, i.e. YOLOv5, specifically trained and tested on a user interface control detection dataset containing 14,155 training and 2,000 test samples we created from software screenshots.</p>
 <p>The following table presents the performence scores obtained by the YOLOv5 model on the UI control detection dataset.</p>
 <br>
-<img width="800" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Table-1.jpg">
+<img width="500" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Table-1.jpg">
