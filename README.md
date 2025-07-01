@@ -67,10 +67,10 @@ These values consistently resulted in high F-scores and a good trade-off between
 <br>
 
 <p><b>Desktop screenshots test dataset</b></p>
-<img width="700" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Table-2.jpg">
+<img width="600" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Table-2.jpg">
 <br>
 <p><b>Desktop screenshots–cut images test dataset</b></p>
-<img width="700" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Table-3.jpg">
+<img width="600" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Table-3.jpg">
 <br>
 <p><b>Desktop–mobile screenshots test dataset</b></p>
-<img width="700" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Table-4.jpg">
+<img width="600" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Table-4.jpg">
