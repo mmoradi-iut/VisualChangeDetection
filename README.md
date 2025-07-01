@@ -37,3 +37,16 @@ In order to have access to the dataset and get the permision, send an email to m
 
 <p>- Desktop–mobile screenshots</p>
 <p>The goal of the third dataset is to evaluate the performance of the visual change detection method in detecting differences between screenshots of an application under test in different platforms. We created this dataset by taking screenshots of 180 pairs of different web applications, each pair consisting of one desktop and one mobile screenshot of the same application with the same Graphical User Interface (GUI). The size of images is 1,920 by 1,080 pixels in desktop and 576 by 832 pixels in mobile platform. We also generated ground-truth annotations for every pair of desktop and mobile screenshots by manually annotating user interface controls and correspondence between the controls in the images.</p>
+
+In order to have access to the dataset and get the permision, send an email to m.moradi-vastegani@tricentis.com.
+
+<h2>Hyperparameter tuning</h2>
+<p>Our visual change detection method has four hyperparameters that control how the method creates a graph, identifies correspondence between UI controls within images, and detects changes. We designed and conducted a set of experiments to investigate the impact of these hyperparameters on the performance of change detection. We used 70 percent of each dataset for tuning the hyperparameters and the remaining 30 percent for testing the change detection method against the baseline change detectors.</p>
+<p>Based on the tuning experiments across all three datasets, we selected the following final hyperparameter values for the comparative evaluations:
+  
+•	Number of nearest neighbors 𝐾=8 for desktop screenshots, 𝐾=6 for cut images, and 𝐾=5 for desktop–mobile pairs;
+•	Maximum hash difference 𝐻=10;
+•	Minimum text similarity threshold 𝑇𝑆=0.7;
+•	Minimum neighbor similarity threshold 𝑁𝑆=0.8.
+
+These values consistently resulted in high F-scores and a good trade-off between precision and recall across varying IOU thresholds. Notably, adjusting 𝐾 per dataset improved robustness when layout or platform changes altered neighborhood structures. All comparative results were obtained using these tuned parameters.</p>
