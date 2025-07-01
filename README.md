@@ -24,10 +24,10 @@ The proposed visual change detection method operates through a four-stage pipeli
 
 In order to have access to the dataset and get the permision, send an email to m.moradi-vastegani@tricentis.com.
 
-<h2>Visual change detection dataset</h2>
+<h2>Visual change detection datasets</h2>
 <p>We created three different datasets in order to test the performance of our graph-based change detection method in various scenarios. Two datasets were created for change detection within desktop images in two different scenarios. One dataset were created to detect changes between desktop and mobile images.</p>
 
-<p>- Desktop screenshots</p>
+<p><b>- Desktop screenshots</b></p>
 <p>We collected an initial set of images of 250 websites by taking screenshots of the desktop browser in the maximized mode with a screen size of 1,920 by 1,080 pixels. The first dataset was created by automatically applying eight different types of changes to the initial set of images. A maximum of four changes were applied to every image, with a minimum of one change. The number of changes and the type of changes were automatically selected in a random manner.</p>
 
 <p>- Desktop screenshots–cut images</p>
