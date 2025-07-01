@@ -21,3 +21,5 @@ The proposed visual change detection method operates through a four-stage pipeli
 <p>The following table presents the performence scores obtained by the YOLOv5 model on the UI control detection dataset.</p>
 <br>
 <img width="500" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Table-1.jpg">
+
+In order to have access to the dataset and get the permision, send an email to m.moradi-vastegani@tricentis.com.
