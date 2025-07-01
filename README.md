@@ -50,3 +50,27 @@ In order to have access to the datasets and get the permision, send an email to 
 <p>•	Minimum neighbor similarity threshold 𝑁𝑆=0.8.</p>
 
 These values consistently resulted in high F-scores and a good trade-off between precision and recall across varying IOU thresholds. Notably, adjusting 𝐾 per dataset improved robustness when layout or platform changes altered neighborhood structures. All comparative results were obtained using these tuned parameters.</p>
+
+<h2>Comparison against baselines</h2>
+<p>We designed and conducted another set of experiments to evaluate the performance of our visual change detection method against other change detectors. Given the innovative nature of our approach, there exists a lack of directly comparable methods in the existing literature. Existing visual change detection tools often rely on pixel-level comparisons, lacking the sophistication necessary for nuanced UI change detection. In the absence of directly analogous methods, we implemented two baseline change detectors to establish a meaningful context for evaluating our proposed method. These baselines are designed to represent conventional strategies for change detection in software interfaces and serve as benchmarks against which the performance of our method can be objectively assessed.</p>
+
+<p><b>- Pixel-wise comparison</b></p>
+<p>This baseline method involves a pixel-wise comparison of the original and modified software screenshots. Pixels in the same location within the original and changed images are compared against each other and that location is marked as a change if the pixel values are different. This approach, although simplistic, reflects a common strategy employed in many visual change detection methodologies. However, it fails to capture the semantic relationships between user interface controls and has limited adaptability to dynamic interface changes.</p>
+
+<p><b>- Region-based change detection</b></p>
+<p>The second baseline method employs a region-based approach, wherein predefined regions of interest, i.e. UI controls, within the software screenshot are analyzed for changes. UI controls are first detected using the YOLO object detection model, then, controls in the same location within the images are compared using the hash difference. Controls are marked as a change if they have a hash difference higher than 10 with their corresponding region within the other image. This hash difference threshold was specified by hyperparameter tuning on the training datasets. While this baseline method introduces a level of abstraction beyond pixel-wise comparison, it may struggle with capturing spatial relationships and nuanced changes that extend beyond control-wise visual similarity.</p>
+
+<h2>Performance evaluation</h2>
+<p>PWC=Pixel-Wise Comparison</p>
+<p>RCD=Region-based Change Detection</p>
+<p>GVCD=our Graph-based Visual Change Detection</p>
+<br>
+
+<p><b>Desktop screenshots test dataset</b></p>
+<img width="500" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Table-2.jpg">
+<br>
+<p><b>Desktop screenshots–cut images test dataset</b></p>
+<img width="500" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Table-3.jpg">
+<br>
+<p><b>Desktop–mobile screenshots test dataset</b></p>
+<img width="500" src="https://github.com/mmoradi-iut/VisualChangeDetection/blob/main/Table-4.jpg">
